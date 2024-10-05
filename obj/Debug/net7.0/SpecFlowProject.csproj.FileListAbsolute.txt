@@ -109,3 +109,4 @@ C:\Users\nata\SpecFlowProject\obj\Debug\net7.0\refint\SpecFlowProject.dll
 C:\Users\nata\SpecFlowProject\obj\Debug\net7.0\SpecFlowProject.pdb
 C:\Users\nata\SpecFlowProject\obj\Debug\net7.0\SpecFlowProject.genruntimeconfig.cache
 C:\Users\nata\SpecFlowProject\obj\Debug\net7.0\ref\SpecFlowProject.dll
+C:\Users\nata\SpecFlowProject\bin\Debug\net7.0\specflow.json

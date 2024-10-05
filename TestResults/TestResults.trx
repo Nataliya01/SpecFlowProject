@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="6049a8ef-2058-4cc8-9c94-6fe80d3313ef" name="nata@DESKTOP-B7PGTAA 2024-10-05 19:55:22" runUser="DESKTOP-B7PGTAA\nata" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-10-05T19:55:22.3608498+03:00" queuing="2024-10-05T19:55:22.3608501+03:00" start="2024-10-05T19:55:20.8013270+03:00" finish="2024-10-05T19:55:22.3685342+03:00" />
+  <TestSettings name="default" id="a423fa0f-0572-4ec7-becb-9470f41882b6">
+    <Deployment runDeploymentRoot="nata_DESKTOP-B7PGTAA_2024-10-05_19_55_22" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="b08826d4-dac4-47c1-9307-96b6a7b02b88" testId="ba33e863-bc38-424c-5b94-2dfbd9498fb4" testName="GetASinglePostByID" computerName="DESKTOP-B7PGTAA" duration="00:00:00.1270050" startTime="2024-10-05T19:55:22.0266817+03:00" endTime="2024-10-05T19:55:22.1536863+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b08826d4-dac4-47c1-9307-96b6a7b02b88">
+      <Output>
+        <StdOut>Given I have a valid API endpoint&#xD;
+-&gt; done: UserPostsSteps.GivenIHaveAValidApiEndpoint() (0,0s)&#xD;
+And the post ID is 1&#xD;
+-&gt; done: UserPostsSteps.GivenThePostIDIs(1) (0,0s)&#xD;
+When I send a GET request to "/posts/1"&#xD;
+-&gt; done: UserPostsSteps.WhenISendAGETRequestTo("/posts/1") (0,1s)&#xD;
+Then the response status code should be 200&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseStatusCodeShouldBe(200) (0,0s)&#xD;
+And the response should contain the post with ID 1&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseShouldContainThePostWithID(1) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27216e61-3559-467b-8d7c-a5008263c9ea" testId="10e30a73-8251-f289-a5dd-e9b2856f88cc" testName="Test1" computerName="DESKTOP-B7PGTAA" duration="00:00:00.0265070" startTime="2024-10-05T19:55:22.1597167+03:00" endTime="2024-10-05T19:55:22.1862238+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27216e61-3559-467b-8d7c-a5008263c9ea" />
+    <UnitTestResult executionId="f490e038-2bca-405a-ba50-70414b86dd84" testId="14d507b7-c699-0625-d6ea-742a29f41c29" testName="GetAllPosts" computerName="DESKTOP-B7PGTAA" duration="00:00:00.2799250" startTime="2024-10-05T19:55:21.7435040+03:00" endTime="2024-10-05T19:55:22.0232776+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f490e038-2bca-405a-ba50-70414b86dd84">
+      <Output>
+        <StdOut>Given I have a valid API endpoint&#xD;
+-&gt; done: UserPostsSteps.GivenIHaveAValidApiEndpoint() (0,0s)&#xD;
+When I send a GET request to "/posts"&#xD;
+-&gt; done: UserPostsSteps.WhenISendAGETRequestTo("/posts") (0,2s)&#xD;
+Then the response status code should be 200&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseStatusCodeShouldBe(200) (0,0s)&#xD;
+And the response should contain a list of posts&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseShouldContainAListOfPosts() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetASinglePostByID" storage="c:\users\nata\specflowproject\bin\debug\net7.0\specflowproject.dll" id="ba33e863-bc38-424c-5b94-2dfbd9498fb4">
+      <Execution id="b08826d4-dac4-47c1-9307-96b6a7b02b88" />
+      <TestMethod codeBase="C:\Users\nata\SpecFlowProject\bin\Debug\net7.0\SpecFlowProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SpecFlowProject.Features.UserPostsAPIFeature" name="GetASinglePostByID" />
+    </UnitTest>
+    <UnitTest name="Test1" storage="c:\users\nata\specflowproject\bin\debug\net7.0\specflowproject.dll" id="10e30a73-8251-f289-a5dd-e9b2856f88cc">
+      <Execution id="27216e61-3559-467b-8d7c-a5008263c9ea" />
+      <TestMethod codeBase="C:\Users\nata\SpecFlowProject\bin\Debug\net7.0\SpecFlowProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SpecFlowProject.Tests" name="Test1" />
+    </UnitTest>
+    <UnitTest name="GetAllPosts" storage="c:\users\nata\specflowproject\bin\debug\net7.0\specflowproject.dll" id="14d507b7-c699-0625-d6ea-742a29f41c29">
+      <Execution id="f490e038-2bca-405a-ba50-70414b86dd84" />
+      <TestMethod codeBase="C:\Users\nata\SpecFlowProject\bin\Debug\net7.0\SpecFlowProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="SpecFlowProject.Features.UserPostsAPIFeature" name="GetAllPosts" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ba33e863-bc38-424c-5b94-2dfbd9498fb4" executionId="b08826d4-dac4-47c1-9307-96b6a7b02b88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10e30a73-8251-f289-a5dd-e9b2856f88cc" executionId="27216e61-3559-467b-8d7c-a5008263c9ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14d507b7-c699-0625-d6ea-742a29f41c29" executionId="f490e038-2bca-405a-ba50-70414b86dd84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.4.0.0: Test execution started&#xD;
+Running all tests in C:\Users\nata\SpecFlowProject\bin\Debug\net7.0\SpecFlowProject.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.4.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-B7PGTAA" outcome="Warning" timestamp="2024-10-05T19:55:22.0386293+03:00">
+        <Text>Given I have a valid API endpoint&#xD;
+-&gt; done: UserPostsSteps.GivenIHaveAValidApiEndpoint() (0,0s)&#xD;
+When I send a GET request to "/posts"&#xD;
+-&gt; done: UserPostsSteps.WhenISendAGETRequestTo("/posts") (0,2s)&#xD;
+Then the response status code should be 200&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseStatusCodeShouldBe(200) (0,0s)&#xD;
+And the response should contain a list of posts&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseShouldContainAListOfPosts() (0,0s)&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-B7PGTAA" outcome="Warning" timestamp="2024-10-05T19:55:22.1552048+03:00">
+        <Text>Given I have a valid API endpoint&#xD;
+-&gt; done: UserPostsSteps.GivenIHaveAValidApiEndpoint() (0,0s)&#xD;
+And the post ID is 1&#xD;
+-&gt; done: UserPostsSteps.GivenThePostIDIs(1) (0,0s)&#xD;
+When I send a GET request to "/posts/1"&#xD;
+-&gt; done: UserPostsSteps.WhenISendAGETRequestTo("/posts/1") (0,1s)&#xD;
+Then the response status code should be 200&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseStatusCodeShouldBe(200) (0,0s)&#xD;
+And the response should contain the post with ID 1&#xD;
+-&gt; done: UserPostsSteps.ThenTheResponseShouldContainThePostWithID(1) (0,0s)&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

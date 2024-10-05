@@ -1,0 +1,31 @@
+{
+    "testExecutions": [
+      {
+        "testAssembly": "SpecFlowProject.dll",
+        "testCase": "SpecFlowProject.Tests.UserPostsSteps.GivenIHaveAValidApiEndpoint",
+        "duration": 200,  
+        "success": true,
+        "errorMessage": "",
+        "stackTrace": ""
+      },
+      {
+        "testAssembly": "SpecFlowProject.dll",
+        "testCase": "SpecFlowProject.Tests.UserPostsSteps.WhenISendAGETRequestTo(\"/posts\")",
+        "duration": 200,
+        "success": true,
+        "errorMessage": "",
+        "stackTrace": ""
+      },
+      {
+        "testAssembly": "SpecFlowProject.dll",
+        "testCase": "SpecFlowProject.Tests.UserPostsSteps.ThenTheResponseStatusCodeShouldBe(200)",
+        "duration": 200,
+        "success": true,
+        "errorMessage": "",
+        "stackTrace": ""
+      }
+    ]
+  }
+  
+  
+  
